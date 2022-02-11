@@ -149,6 +149,22 @@ users:
         -   name: System Administrator
             type: role
     username: admin
+-   email: john.doe@redhat.com
+    first_name: John
+    is_superuser: false
+    is_system_auditor: false
+    last_name: Doe
+    natural_key:
+        type: user
+        username: jdoe
+    related:
+        roles:
+        -   content_object:
+                name: Security
+                type: organization
+            name: Member
+            type: role
+    username: jdoe
 -   email: rlopez@redhat.com
     first_name: Roger
     is_superuser: false
