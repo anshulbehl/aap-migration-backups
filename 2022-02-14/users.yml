@@ -127,6 +127,14 @@ users:
             name: Admin
             type: role
         -   content_object:
+                name: migration backup
+                organization:
+                    name: Default
+                    type: organization
+                type: job_template
+            name: Admin
+            type: role
+        -   content_object:
                 credential_type:
                     kind: ssh
                     name: Machine

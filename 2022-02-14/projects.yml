@@ -1,9 +1,7 @@
 projects:
 -   allow_override: false
     credential: null
-    default_environment:
-        name: Ansible Engine 2.9 execution environment
-        type: execution_environment
+    custom_virtualenv: null
     description: ''
     local_path: _6__demo_project
     name: Demo Project
@@ -32,9 +30,7 @@ projects:
     timeout: 0
 -   allow_override: false
     credential: null
-    default_environment:
-        name: Ansible Engine 2.9 execution environment
-        type: execution_environment
+    custom_virtualenv: null
     description: prescriptive demos from Red Hat Management Business Unit
     local_path: _8__ansible_official_demo_project
     name: Ansible official demo project
@@ -63,9 +59,7 @@ projects:
     timeout: 0
 -   allow_override: false
     credential: null
-    default_environment:
-        name: Ansible Engine 2.9 execution environment
-        type: execution_environment
+    custom_virtualenv: null
     description: playbooks to support fact scanning in Ansible Tower
     local_path: _15__ansible_official_awx_facts_playbooks_project
     name: Ansible official awx-facts-playbooks project
@@ -94,9 +88,7 @@ projects:
     timeout: 0
 -   allow_override: false
     credential: null
-    default_environment:
-        name: Ansible Engine 2.9 execution environment
-        type: execution_environment
+    custom_virtualenv: null
     description: Security
     local_path: _21__security_project
     name: Security Project
@@ -125,9 +117,7 @@ projects:
     timeout: 0
 -   allow_override: false
     credential: null
-    default_environment:
-        name: Ansible Engine 2.9 execution environment
-        type: execution_environment
+    custom_virtualenv: null
     description: ''
     local_path: _24__aap_migration
     name: AAP Migration
@@ -153,4 +143,33 @@ projects:
     scm_update_cache_timeout: 0
     scm_update_on_launch: false
     scm_url: https://github.com/rlopez133/refarch-aap21
+    timeout: 0
+-   allow_override: false
+    credential: null
+    custom_virtualenv: null
+    description: ''
+    local_path: aap_migration_backups
+    name: Migration project
+    natural_key:
+        name: Migration project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    organization:
+        name: Default
+        type: organization
+    related:
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+    scm_branch: ''
+    scm_clean: false
+    scm_delete_on_update: false
+    scm_refspec: ''
+    scm_type: ''
+    scm_update_cache_timeout: 0
+    scm_update_on_launch: false
+    scm_url: ''
     timeout: 0
