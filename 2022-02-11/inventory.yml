@@ -1,5 +1,5 @@
 inventory:
--   description: ''
+-   description: 'a'
     host_filter: null
     insights_credential: null
     kind: ''
