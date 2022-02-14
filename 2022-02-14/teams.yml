@@ -1,0 +1,14 @@
+teams:
+-   description: ''
+    name: Secuirty
+    natural_key:
+        name: Secuirty
+        organization:
+            name: Security
+            type: organization
+        type: team
+    organization:
+        name: Security
+        type: organization
+    related:
+        roles: []
