@@ -694,69 +694,6 @@ job_templates:
     ask_verbosity_on_launch: false
     become_enabled: false
     custom_virtualenv: null
-    description: ''
-    diff_mode: false
-    extra_vars: '---
-
-        CONTROLLER_HOST: 44.197.147.131
-
-        CONTROLLER_USERNAME: admin
-
-        CONTROLLER_PASSWORD: ********
-
-        CONTROLLER_VERIFY_SSL: False'
-    force_handlers: false
-    forks: 0
-    host_config_key: ''
-    inventory:
-        name: localhost
-        organization:
-            name: Default
-            type: organization
-        type: inventory
-    job_slice_count: 1
-    job_tags: ''
-    job_type: run
-    limit: ''
-    name: migration backup
-    natural_key:
-        name: migration backup
-        organization:
-            name: Default
-            type: organization
-        type: job_template
-    playbook: ''
-    project: null
-    related:
-        credentials: []
-        labels: []
-        notification_templates_error: []
-        notification_templates_started: []
-        notification_templates_success: []
-        schedules: []
-        survey_spec: {}
-    scm_branch: ''
-    skip_tags: ''
-    start_at_task: ''
-    survey_enabled: false
-    timeout: 0
-    use_fact_cache: false
-    verbosity: 3
-    webhook_credential: null
-    webhook_service: ''
--   allow_simultaneous: false
-    ask_credential_on_launch: false
-    ask_diff_mode_on_launch: false
-    ask_inventory_on_launch: false
-    ask_job_type_on_launch: false
-    ask_limit_on_launch: false
-    ask_scm_branch_on_launch: false
-    ask_skip_tags_on_launch: false
-    ask_tags_on_launch: false
-    ask_variables_on_launch: false
-    ask_verbosity_on_launch: false
-    become_enabled: false
-    custom_virtualenv: null
     description: Create HTML report using SCAP Security Guide (SSG)
     diff_mode: false
     extra_vars: ''
