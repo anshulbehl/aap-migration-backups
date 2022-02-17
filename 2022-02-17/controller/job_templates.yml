@@ -745,13 +745,8 @@ job_templates:
             name: Default
             type: organization
         type: job_template
-    playbook: export_test.yml
-    project:
-        name: Migration project
-        organization:
-            name: Default
-            type: organization
-        type: project
+    playbook: ''
+    project: null
     related:
         credentials: []
         labels: []

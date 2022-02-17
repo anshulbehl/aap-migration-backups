@@ -144,32 +144,3 @@ projects:
     scm_update_on_launch: false
     scm_url: https://github.com/rlopez133/refarch-aap21
     timeout: 0
--   allow_override: false
-    credential: null
-    custom_virtualenv: null
-    description: ''
-    local_path: aap_migration_backups
-    name: Migration project
-    natural_key:
-        name: Migration project
-        organization:
-            name: Default
-            type: organization
-        type: project
-    organization:
-        name: Default
-        type: organization
-    related:
-        notification_templates_error: []
-        notification_templates_started: []
-        notification_templates_success: []
-        schedules: []
-    scm_branch: ''
-    scm_clean: false
-    scm_delete_on_update: false
-    scm_refspec: ''
-    scm_type: ''
-    scm_update_cache_timeout: 0
-    scm_update_on_launch: false
-    scm_url: ''
-    timeout: 0
