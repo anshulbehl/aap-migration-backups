@@ -1,0 +1,175 @@
+projects:
+-   allow_override: false
+    credential: null
+    custom_virtualenv: null
+    description: ''
+    local_path: _6__demo_project
+    name: Demo Project
+    natural_key:
+        name: Demo Project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    organization:
+        name: Default
+        type: organization
+    related:
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+    scm_branch: ''
+    scm_clean: false
+    scm_delete_on_update: false
+    scm_refspec: ''
+    scm_type: git
+    scm_update_cache_timeout: 0
+    scm_update_on_launch: true
+    scm_url: https://github.com/ansible/ansible-tower-samples
+    timeout: 0
+-   allow_override: false
+    credential: null
+    custom_virtualenv: null
+    description: prescriptive demos from Red Hat Management Business Unit
+    local_path: _8__ansible_official_demo_project
+    name: Ansible official demo project
+    natural_key:
+        name: Ansible official demo project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    organization:
+        name: Default
+        type: organization
+    related:
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+    scm_branch: ''
+    scm_clean: false
+    scm_delete_on_update: false
+    scm_refspec: ''
+    scm_type: git
+    scm_update_cache_timeout: 0
+    scm_update_on_launch: false
+    scm_url: https://github.com/ansible/product-demos
+    timeout: 0
+-   allow_override: false
+    credential: null
+    custom_virtualenv: null
+    description: playbooks to support fact scanning in Ansible Tower
+    local_path: _15__ansible_official_awx_facts_playbooks_project
+    name: Ansible official awx-facts-playbooks project
+    natural_key:
+        name: Ansible official awx-facts-playbooks project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    organization:
+        name: Default
+        type: organization
+    related:
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+    scm_branch: ''
+    scm_clean: false
+    scm_delete_on_update: false
+    scm_refspec: ''
+    scm_type: git
+    scm_update_cache_timeout: 0
+    scm_update_on_launch: false
+    scm_url: https://github.com/ansible/awx-facts-playbooks.git
+    timeout: 0
+-   allow_override: false
+    credential: null
+    custom_virtualenv: null
+    description: Security
+    local_path: _21__security_project
+    name: Security Project
+    natural_key:
+        name: Security Project
+        organization:
+            name: Security
+            type: organization
+        type: project
+    organization:
+        name: Security
+        type: organization
+    related:
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+    scm_branch: master
+    scm_clean: false
+    scm_delete_on_update: false
+    scm_refspec: ''
+    scm_type: git
+    scm_update_cache_timeout: 0
+    scm_update_on_launch: false
+    scm_url: https://github.com/ansible/awx-facts-playbooks.git
+    timeout: 0
+-   allow_override: false
+    credential: null
+    custom_virtualenv: null
+    description: ''
+    local_path: _24__aap_migration
+    name: AAP Migration
+    natural_key:
+        name: AAP Migration
+        organization:
+            name: Default
+            type: organization
+        type: project
+    organization:
+        name: Default
+        type: organization
+    related:
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+    scm_branch: ''
+    scm_clean: false
+    scm_delete_on_update: false
+    scm_refspec: ''
+    scm_type: git
+    scm_update_cache_timeout: 0
+    scm_update_on_launch: false
+    scm_url: https://github.com/rlopez133/refarch-aap21
+    timeout: 0
+-   allow_override: false
+    credential: null
+    custom_virtualenv: null
+    description: ''
+    local_path: aap_migration_backups
+    name: Migration project
+    natural_key:
+        name: Migration project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    organization:
+        name: Default
+        type: organization
+    related:
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+    scm_branch: ''
+    scm_clean: false
+    scm_delete_on_update: false
+    scm_refspec: ''
+    scm_type: ''
+    scm_update_cache_timeout: 0
+    scm_update_on_launch: false
+    scm_url: ''
+    timeout: 0
