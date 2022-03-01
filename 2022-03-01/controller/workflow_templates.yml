@@ -265,6 +265,104 @@ workflow_job_templates:
                 always_nodes: []
                 credentials: []
                 failure_nodes: []
+                success_nodes:
+                -   identifier: 92a87081-1b7a-4fae-bba1-98252d6fc297
+                    type: workflow_job_template_node
+                    workflow_job_template:
+                        name: Security workflow
+                        organization:
+                            name: Security
+                            type: organization
+                        type: workflow_job_template
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: INFRASTRUCTURE / Security Patching
+                organization:
+                    name: Security
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: Security workflow
+                organization:
+                    name: Security
+                    type: organization
+                type: workflow_job_template
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data: {}
+            identifier: 92a87081-1b7a-4fae-bba1-98252d6fc297
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: 92a87081-1b7a-4fae-bba1-98252d6fc297
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: Security workflow
+                    organization:
+                        name: Security
+                        type: organization
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes:
+                -   identifier: d975b6ab-ed2c-4fa3-a8d5-4875420b322f
+                    type: workflow_job_template_node
+                    workflow_job_template:
+                        name: Security workflow
+                        organization:
+                            name: Security
+                            type: organization
+                        type: workflow_job_template
+                success_nodes:
+                -   identifier: 77189666-7638-4c87-ba74-987438a57b97
+                    type: workflow_job_template_node
+                    workflow_job_template:
+                        name: Security workflow
+                        organization:
+                            name: Security
+                            type: organization
+                        type: workflow_job_template
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: INFRASTRUCTURE / Fact Scan
+                organization:
+                    name: Default
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: Security workflow
+                organization:
+                    name: Security
+                    type: organization
+                type: workflow_job_template
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data: {}
+            identifier: 77189666-7638-4c87-ba74-987438a57b97
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: 77189666-7638-4c87-ba74-987438a57b97
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: Security workflow
+                    organization:
+                        name: Security
+                        type: organization
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes: []
                 success_nodes: []
             scm_branch: null
             skip_tags: null
@@ -272,6 +370,43 @@ workflow_job_templates:
                 name: INFRASTRUCTURE / Security Patching
                 organization:
                     name: Security
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: Security workflow
+                organization:
+                    name: Security
+                    type: organization
+                type: workflow_job_template
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data: {}
+            identifier: d975b6ab-ed2c-4fa3-a8d5-4875420b322f
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: d975b6ab-ed2c-4fa3-a8d5-4875420b322f
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: Security workflow
+                    organization:
+                        name: Security
+                        type: organization
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes: []
+                success_nodes: []
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: INFRASTRUCTURE / Turn off IBM Community Grid
+                organization:
+                    name: Default
                     type: organization
                 type: job_template
             verbosity: null
