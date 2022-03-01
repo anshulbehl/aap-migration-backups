@@ -1,0 +1,121 @@
+inventory:
+-   description: ''
+    host_filter: null
+    insights_credential: null
+    kind: ''
+    name: localhost
+    natural_key:
+        name: localhost
+        organization:
+            name: Default
+            type: organization
+        type: inventory
+    organization:
+        name: Default
+        type: organization
+    related:
+        groups: []
+        hosts:
+        -   description: ''
+            enabled: true
+            instance_id: ''
+            inventory:
+                name: localhost
+                organization:
+                    name: Default
+                    type: organization
+                type: inventory
+            name: localhost
+            natural_key:
+                inventory:
+                    name: localhost
+                    organization:
+                        name: Default
+                        type: organization
+                    type: inventory
+                name: localhost
+                type: host
+            related:
+                groups: []
+            variables: ''
+    variables: '---'
+-   description: ''
+    host_filter: null
+    insights_credential: null
+    kind: ''
+    name: Test Inventory
+    natural_key:
+        name: Test Inventory
+        organization:
+            name: Security
+            type: organization
+        type: inventory
+    organization:
+        name: Security
+        type: organization
+    related:
+        groups: []
+        hosts:
+        -   description: ''
+            enabled: true
+            instance_id: ''
+            inventory:
+                name: Test Inventory
+                organization:
+                    name: Security
+                    type: organization
+                type: inventory
+            name: 172.17.169.36
+            natural_key:
+                inventory:
+                    name: Test Inventory
+                    organization:
+                        name: Security
+                        type: organization
+                    type: inventory
+                name: 172.17.169.36
+                type: host
+            related:
+                groups: []
+            variables: ''
+        -   description: ''
+            enabled: true
+            instance_id: ''
+            inventory:
+                name: Test Inventory
+                organization:
+                    name: Security
+                    type: organization
+                type: inventory
+            name: 172.17.191.249
+            natural_key:
+                inventory:
+                    name: Test Inventory
+                    organization:
+                        name: Security
+                        type: organization
+                    type: inventory
+                name: 172.17.191.249
+                type: host
+            related:
+                groups: []
+            variables: ''
+    variables: '---'
+-   description: ''
+    host_filter: null
+    insights_credential: null
+    kind: ''
+    name: Workshop Inventory
+    natural_key:
+        name: Workshop Inventory
+        organization:
+            name: Default
+            type: organization
+        type: inventory
+    organization:
+        name: Default
+        type: organization
+    related:
+        groups: []
+        hosts: []
+    variables: '---'
