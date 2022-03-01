@@ -4,218 +4,6 @@ workflow_job_templates:
     ask_limit_on_launch: false
     ask_scm_branch_on_launch: false
     ask_variables_on_launch: false
-    description: ''
-    extra_vars: ''
-    inventory: null
-    limit: null
-    name: Approval workflow
-    natural_key:
-        name: Approval workflow
-        organization: null
-        type: workflow_job_template
-    organization: null
-    related:
-        labels: []
-        notification_templates_approvals: []
-        notification_templates_error: []
-        notification_templates_started: []
-        notification_templates_success: []
-        schedules: []
-        survey_spec: {}
-        workflow_nodes:
-        -   all_parents_must_converge: false
-            diff_mode: null
-            extra_data: {}
-            identifier: ac19bf65-2a65-450d-a355-fae58f253bf3
-            inventory: null
-            job_tags: null
-            job_type: null
-            limit: null
-            natural_key:
-                identifier: ac19bf65-2a65-450d-a355-fae58f253bf3
-                type: workflow_job_template_node
-                workflow_job_template:
-                    name: Approval workflow
-                    organization: null
-                    type: workflow_job_template
-            related:
-                always_nodes: []
-                credentials: []
-                failure_nodes: []
-                success_nodes: []
-            scm_branch: null
-            skip_tags: null
-            unified_job_template:
-                name: INFRASTRUCTURE / Patching
-                organization:
-                    name: Default
-                    type: organization
-                type: job_template
-            verbosity: null
-            workflow_job_template:
-                name: Approval workflow
-                organization: null
-                type: workflow_job_template
-        -   all_parents_must_converge: false
-            diff_mode: null
-            extra_data: {}
-            identifier: 2b56f9f8-6caf-4c1d-b38c-89e704a03146
-            inventory: null
-            job_tags: null
-            job_type: null
-            limit: null
-            natural_key:
-                identifier: 2b56f9f8-6caf-4c1d-b38c-89e704a03146
-                type: workflow_job_template_node
-                workflow_job_template:
-                    name: Approval workflow
-                    organization: null
-                    type: workflow_job_template
-            related:
-                always_nodes: []
-                credentials: []
-                failure_nodes:
-                -   identifier: a83daec6-3012-4260-ae17-bb2ab72f89df
-                    type: workflow_job_template_node
-                    workflow_job_template:
-                        name: Approval workflow
-                        organization: null
-                        type: workflow_job_template
-                success_nodes:
-                -   identifier: ac19bf65-2a65-450d-a355-fae58f253bf3
-                    type: workflow_job_template_node
-                    workflow_job_template:
-                        name: Approval workflow
-                        organization: null
-                        type: workflow_job_template
-            scm_branch: null
-            skip_tags: null
-            unified_job_template:
-                name: DEVELOPER / Create Developer Report
-                organization:
-                    name: Default
-                    type: organization
-                type: job_template
-            verbosity: null
-            workflow_job_template:
-                name: Approval workflow
-                organization: null
-                type: workflow_job_template
-        -   all_parents_must_converge: false
-            diff_mode: null
-            extra_data: {}
-            identifier: a83daec6-3012-4260-ae17-bb2ab72f89df
-            inventory: null
-            job_tags: null
-            job_type: null
-            limit: null
-            natural_key:
-                identifier: a83daec6-3012-4260-ae17-bb2ab72f89df
-                type: workflow_job_template_node
-                workflow_job_template:
-                    name: Approval workflow
-                    organization: null
-                    type: workflow_job_template
-            related:
-                always_nodes: []
-                credentials: []
-                failure_nodes: []
-                success_nodes:
-                -   identifier: d4d5e7e5-f6c4-4255-b493-5929121271df
-                    type: workflow_job_template_node
-                    workflow_job_template:
-                        name: Approval workflow
-                        organization: null
-                        type: workflow_job_template
-            scm_branch: null
-            skip_tags: null
-            unified_job_template:
-                name: INFRASTRUCTURE / Gather Debug Info
-                organization:
-                    name: Default
-                    type: organization
-                type: job_template
-            verbosity: null
-            workflow_job_template:
-                name: Approval workflow
-                organization: null
-                type: workflow_job_template
-        -   all_parents_must_converge: false
-            diff_mode: null
-            extra_data: {}
-            identifier: 4943c06a-3b17-4eeb-815e-39cec466e499
-            inventory: null
-            job_tags: null
-            job_type: null
-            limit: null
-            natural_key:
-                identifier: 4943c06a-3b17-4eeb-815e-39cec466e499
-                type: workflow_job_template_node
-                workflow_job_template:
-                    name: Approval workflow
-                    organization: null
-                    type: workflow_job_template
-            related:
-                always_nodes: []
-                credentials: []
-                failure_nodes: []
-                success_nodes: []
-            scm_branch: null
-            skip_tags: null
-            unified_job_template:
-                name: DEVELOPER / Create Developer Report
-                organization:
-                    name: Default
-                    type: organization
-                type: job_template
-            verbosity: null
-            workflow_job_template:
-                name: Approval workflow
-                organization: null
-                type: workflow_job_template
-        -   all_parents_must_converge: false
-            diff_mode: null
-            extra_data:
-                application: httpd
-            identifier: 80569776-ba41-4aef-98a5-5dfe01ccf83e
-            inventory: null
-            job_tags: null
-            job_type: null
-            limit: null
-            natural_key:
-                identifier: 80569776-ba41-4aef-98a5-5dfe01ccf83e
-                type: workflow_job_template_node
-                workflow_job_template:
-                    name: Approval workflow
-                    organization: null
-                    type: workflow_job_template
-            related:
-                always_nodes: []
-                credentials: []
-                failure_nodes: []
-                success_nodes: []
-            scm_branch: null
-            skip_tags: null
-            unified_job_template:
-                name: INFRASTRUCTURE / Deploy Application
-                organization:
-                    name: Default
-                    type: organization
-                type: job_template
-            verbosity: null
-            workflow_job_template:
-                name: Approval workflow
-                organization: null
-                type: workflow_job_template
-    scm_branch: null
-    survey_enabled: false
-    webhook_credential: null
-    webhook_service: ''
--   allow_simultaneous: false
-    ask_inventory_on_launch: false
-    ask_limit_on_launch: false
-    ask_scm_branch_on_launch: false
-    ask_variables_on_launch: false
     description: sec workflow
     extra_vars: ''
     inventory:
@@ -264,7 +52,15 @@ workflow_job_templates:
             related:
                 always_nodes: []
                 credentials: []
-                failure_nodes: []
+                failure_nodes:
+                -   identifier: aef09e1b-0d78-4a45-8b06-855e34f90b26
+                    type: workflow_job_template_node
+                    workflow_job_template:
+                        name: Security workflow
+                        organization:
+                            name: Security
+                            type: organization
+                        type: workflow_job_template
                 success_nodes:
                 -   identifier: 92a87081-1b7a-4fae-bba1-98252d6fc297
                     type: workflow_job_template_node
@@ -405,6 +201,43 @@ workflow_job_templates:
             skip_tags: null
             unified_job_template:
                 name: INFRASTRUCTURE / Turn off IBM Community Grid
+                organization:
+                    name: Default
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: Security workflow
+                organization:
+                    name: Security
+                    type: organization
+                type: workflow_job_template
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data: {}
+            identifier: aef09e1b-0d78-4a45-8b06-855e34f90b26
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: aef09e1b-0d78-4a45-8b06-855e34f90b26
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: Security workflow
+                    organization:
+                        name: Security
+                        type: organization
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes: []
+                success_nodes: []
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: INFRASTRUCTURE / Patching
                 organization:
                     name: Default
                     type: organization
