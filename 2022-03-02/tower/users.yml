@@ -131,7 +131,7 @@ users:
                     kind: ssh
                     name: Machine
                     type: credential_type
-                name: Demo Credential
+                name: zz_Demo Credential
                 organization: null
                 type: credential
             name: Admin
@@ -141,7 +141,7 @@ users:
                     kind: ssh
                     name: Machine
                     type: credential_type
-                name: Test Inventory credentials
+                name: zz_Test Inventory credentials
                 organization: null
                 type: credential
             name: Admin

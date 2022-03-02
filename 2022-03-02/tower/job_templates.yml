@@ -49,7 +49,7 @@ job_templates:
                 kind: ssh
                 name: Machine
                 type: credential_type
-            name: Workshop Credential
+            name: zz_Workshop Credential
             organization:
                 name: Default
                 type: organization
@@ -118,7 +118,7 @@ job_templates:
                 kind: ssh
                 name: Machine
                 type: credential_type
-            name: Workshop Credential
+            name: zz_Workshop Credential
             organization:
                 name: Default
                 type: organization
@@ -201,7 +201,7 @@ job_templates:
                 kind: ssh
                 name: Machine
                 type: credential_type
-            name: Test Inventory credentials
+            name: zz_Test Inventory credentials
             organization: null
             type: credential
         labels: []
@@ -268,7 +268,7 @@ job_templates:
                 kind: ssh
                 name: Machine
                 type: credential_type
-            name: Workshop Credential
+            name: zz_Workshop Credential
             organization:
                 name: Default
                 type: organization
@@ -337,7 +337,7 @@ job_templates:
                 kind: ssh
                 name: Machine
                 type: credential_type
-            name: Workshop Credential
+            name: zz_Workshop Credential
             organization:
                 name: Default
                 type: organization
@@ -431,7 +431,7 @@ job_templates:
                 kind: ssh
                 name: Machine
                 type: credential_type
-            name: Workshop Credential
+            name: zz_Workshop Credential
             organization:
                 name: Default
                 type: organization
@@ -507,7 +507,7 @@ job_templates:
                 kind: ssh
                 name: Machine
                 type: credential_type
-            name: Workshop Credential
+            name: zz_Workshop Credential
             organization:
                 name: Default
                 type: organization
@@ -587,7 +587,7 @@ job_templates:
                 kind: ssh
                 name: Machine
                 type: credential_type
-            name: Test Inventory credentials
+            name: zz_Test Inventory credentials
             organization: null
             type: credential
         labels: []
@@ -661,7 +661,7 @@ job_templates:
                 kind: ssh
                 name: Machine
                 type: credential_type
-            name: Workshop Credential
+            name: zz_Workshop Credential
             organization:
                 name: Default
                 type: organization
@@ -730,7 +730,7 @@ job_templates:
                 kind: ssh
                 name: Machine
                 type: credential_type
-            name: Workshop Credential
+            name: zz_Workshop Credential
             organization:
                 name: Default
                 type: organization
@@ -799,7 +799,7 @@ job_templates:
                 kind: ssh
                 name: Machine
                 type: credential_type
-            name: Workshop Credential
+            name: zz_Workshop Credential
             organization:
                 name: Default
                 type: organization
