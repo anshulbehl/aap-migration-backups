@@ -1,0 +1,878 @@
+job_templates:
+-   allow_simultaneous: false
+    ask_credential_on_launch: false
+    ask_diff_mode_on_launch: false
+    ask_inventory_on_launch: false
+    ask_job_type_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_skip_tags_on_launch: false
+    ask_tags_on_launch: false
+    ask_variables_on_launch: false
+    ask_verbosity_on_launch: false
+    become_enabled: false
+    description: '''Create HTML report using <a href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#variables-discovered-from-systems-facts">Ansible
+        facts</a>'''
+    diff_mode: false
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    extra_vars: ''
+    force_handlers: false
+    forks: 0
+    host_config_key: ''
+    inventory:
+        name: Workshop Inventory
+        organization:
+            name: Default
+            type: organization
+        type: inventory
+    job_slice_count: 1
+    job_tags: ''
+    job_type: run
+    limit: ''
+    name: DEVELOPER / Create Developer Report
+    natural_key:
+        name: DEVELOPER / Create Developer Report
+        organization:
+            name: Default
+            type: organization
+        type: job_template
+    playbook: playbooks/developer/developer_report.yml
+    project:
+        name: Ansible official demo project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    related:
+        credentials:
+        -   credential_type:
+                kind: ssh
+                name: Machine
+                type: credential_type
+            name: zz_Workshop Credential
+            organization:
+                name: Default
+                type: organization
+            type: credential
+        labels: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+        survey_spec: {}
+    scm_branch: ''
+    skip_tags: ''
+    start_at_task: ''
+    survey_enabled: false
+    timeout: 0
+    use_fact_cache: false
+    verbosity: 0
+    webhook_credential: null
+    webhook_service: ''
+-   allow_simultaneous: false
+    ask_credential_on_launch: false
+    ask_diff_mode_on_launch: false
+    ask_inventory_on_launch: false
+    ask_job_type_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_skip_tags_on_launch: false
+    ask_tags_on_launch: false
+    ask_variables_on_launch: false
+    ask_verbosity_on_launch: false
+    become_enabled: false
+    description: install yum applications on Linux with a survey
+    diff_mode: false
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    extra_vars: ''
+    force_handlers: false
+    forks: 0
+    host_config_key: ''
+    inventory:
+        name: Workshop Inventory
+        organization:
+            name: Default
+            type: organization
+        type: inventory
+    job_slice_count: 1
+    job_tags: ''
+    job_type: run
+    limit: ''
+    name: INFRASTRUCTURE / Deploy Application
+    natural_key:
+        name: INFRASTRUCTURE / Deploy Application
+        organization:
+            name: Default
+            type: organization
+        type: job_template
+    playbook: playbooks/infrastructure/deploy_application.yml
+    project:
+        name: Ansible official demo project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    related:
+        credentials:
+        -   credential_type:
+                kind: ssh
+                name: Machine
+                type: credential_type
+            name: zz_Workshop Credential
+            organization:
+                name: Default
+                type: organization
+            type: credential
+        labels: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+        survey_spec:
+            description: Which application do you want to install?
+            name: Deploy application survey
+            spec:
+            -   choices:
+                - httpd
+                - nginx
+                - htop
+                - gdb
+                default: httpd
+                question_description: select the application
+                question_name: Select a command you would like to execute
+                required: true
+                type: multiplechoice
+                variable: application
+    scm_branch: ''
+    skip_tags: ''
+    start_at_task: ''
+    survey_enabled: true
+    timeout: 0
+    use_fact_cache: false
+    verbosity: 0
+    webhook_credential: null
+    webhook_service: ''
+-   allow_simultaneous: false
+    ask_credential_on_launch: false
+    ask_diff_mode_on_launch: false
+    ask_inventory_on_launch: false
+    ask_job_type_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_skip_tags_on_launch: false
+    ask_tags_on_launch: false
+    ask_variables_on_launch: false
+    ask_verbosity_on_launch: false
+    become_enabled: false
+    description: scan facts for Linux and Windows systems
+    diff_mode: false
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    extra_vars: ''
+    force_handlers: false
+    forks: 0
+    host_config_key: ''
+    inventory:
+        name: Test Inventory
+        organization:
+            name: Security
+            type: organization
+        type: inventory
+    job_slice_count: 1
+    job_tags: ''
+    job_type: run
+    limit: ''
+    name: INFRASTRUCTURE / Fact Scan
+    natural_key:
+        name: INFRASTRUCTURE / Fact Scan
+        organization:
+            name: Default
+            type: organization
+        type: job_template
+    playbook: scan_facts.yml
+    project:
+        name: Ansible official awx-facts-playbooks project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    related:
+        credentials:
+        -   credential_type:
+                kind: ssh
+                name: Machine
+                type: credential_type
+            name: zz_Test Inventory credentials
+            organization: null
+            type: credential
+        labels: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+        survey_spec: {}
+    scm_branch: ''
+    skip_tags: ''
+    start_at_task: ''
+    survey_enabled: false
+    timeout: 0
+    use_fact_cache: true
+    verbosity: 2
+    webhook_credential: null
+    webhook_service: ''
+-   allow_simultaneous: false
+    ask_credential_on_launch: false
+    ask_diff_mode_on_launch: false
+    ask_inventory_on_launch: false
+    ask_job_type_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_skip_tags_on_launch: false
+    ask_tags_on_launch: false
+    ask_variables_on_launch: false
+    ask_verbosity_on_launch: false
+    become_enabled: false
+    description: provide info for memory and CPU usage for specified systems
+    diff_mode: false
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    extra_vars: ''
+    force_handlers: false
+    forks: 0
+    host_config_key: ''
+    inventory:
+        name: Workshop Inventory
+        organization:
+            name: Default
+            type: organization
+        type: inventory
+    job_slice_count: 1
+    job_tags: ''
+    job_type: run
+    limit: ''
+    name: INFRASTRUCTURE / Gather Debug Info
+    natural_key:
+        name: INFRASTRUCTURE / Gather Debug Info
+        organization:
+            name: Default
+            type: organization
+        type: job_template
+    playbook: playbooks/infrastructure/debug_info.yml
+    project:
+        name: Ansible official demo project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    related:
+        credentials:
+        -   credential_type:
+                kind: ssh
+                name: Machine
+                type: credential_type
+            name: zz_Workshop Credential
+            organization:
+                name: Default
+                type: organization
+            type: credential
+        labels: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+        survey_spec: {}
+    scm_branch: ''
+    skip_tags: ''
+    start_at_task: ''
+    survey_enabled: false
+    timeout: 0
+    use_fact_cache: false
+    verbosity: 0
+    webhook_credential: null
+    webhook_service: ''
+-   allow_simultaneous: false
+    ask_credential_on_launch: false
+    ask_diff_mode_on_launch: false
+    ask_inventory_on_launch: false
+    ask_job_type_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_skip_tags_on_launch: false
+    ask_tags_on_launch: false
+    ask_variables_on_launch: false
+    ask_verbosity_on_launch: false
+    become_enabled: false
+    description: grant sudo privledges for specified time via survey
+    diff_mode: false
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    extra_vars: ''
+    force_handlers: false
+    forks: 0
+    host_config_key: ''
+    inventory:
+        name: Workshop Inventory
+        organization:
+            name: Default
+            type: organization
+        type: inventory
+    job_slice_count: 1
+    job_tags: ''
+    job_type: run
+    limit: ''
+    name: INFRASTRUCTURE / Grant Sudo
+    natural_key:
+        name: INFRASTRUCTURE / Grant Sudo
+        organization:
+            name: Default
+            type: organization
+        type: job_template
+    playbook: playbooks/infrastructure/grant_sudo.yml
+    project:
+        name: Ansible official demo project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    related:
+        credentials:
+        -   credential_type:
+                kind: ssh
+                name: Machine
+                type: credential_type
+            name: zz_Workshop Credential
+            organization:
+                name: Default
+                type: organization
+            type: credential
+        labels: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+        survey_spec:
+            description: ''
+            name: ''
+            spec:
+            -   question_name: Enter host to configure
+                required: false
+                type: text
+                variable: HOSTS
+            -   question_name: Username
+                required: true
+                type: text
+                variable: sudo_user
+            -   default: 10
+                question_name: Time
+                required: true
+                type: integer
+                variable: sudo_count
+            -   choices:
+                - minutes
+                - hours
+                - days
+                default: minutes
+                question_name: Units
+                required: true
+                type: multiplechoice
+                variable: harden_ssh
+    scm_branch: ''
+    skip_tags: ''
+    start_at_task: ''
+    survey_enabled: true
+    timeout: 0
+    use_fact_cache: false
+    verbosity: 0
+    webhook_credential: null
+    webhook_service: ''
+-   allow_simultaneous: false
+    ask_credential_on_launch: false
+    ask_diff_mode_on_launch: false
+    ask_inventory_on_launch: false
+    ask_job_type_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_skip_tags_on_launch: false
+    ask_tags_on_launch: false
+    ask_variables_on_launch: false
+    ask_verbosity_on_launch: false
+    become_enabled: false
+    description: patching for Linux servers
+    diff_mode: false
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    extra_vars: ''
+    force_handlers: false
+    forks: 0
+    host_config_key: ''
+    inventory:
+        name: Workshop Inventory
+        organization:
+            name: Default
+            type: organization
+        type: inventory
+    job_slice_count: 1
+    job_tags: ''
+    job_type: run
+    limit: ''
+    name: INFRASTRUCTURE / Patching
+    natural_key:
+        name: INFRASTRUCTURE / Patching
+        organization:
+            name: Default
+            type: organization
+        type: job_template
+    playbook: playbooks/infrastructure/patching.yml
+    project:
+        name: Ansible official demo project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    related:
+        credentials:
+        -   credential_type:
+                kind: ssh
+                name: Machine
+                type: credential_type
+            name: zz_Workshop Credential
+            organization:
+                name: Default
+                type: organization
+            type: credential
+        labels: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+        survey_spec:
+            description: ''
+            name: ''
+            spec:
+            -   question_name: Enter host to configure
+                required: false
+                type: text
+                variable: HOSTS
+    scm_branch: ''
+    skip_tags: ''
+    start_at_task: ''
+    survey_enabled: true
+    timeout: 0
+    use_fact_cache: false
+    verbosity: 0
+    webhook_credential: null
+    webhook_service: ''
+-   allow_simultaneous: false
+    ask_credential_on_launch: false
+    ask_diff_mode_on_launch: false
+    ask_inventory_on_launch: false
+    ask_job_type_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_skip_tags_on_launch: false
+    ask_tags_on_launch: false
+    ask_variables_on_launch: false
+    ask_verbosity_on_launch: false
+    become_enabled: false
+    description: install and configure Red Hat Insights
+    diff_mode: false
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    extra_vars: ''
+    force_handlers: false
+    forks: 0
+    host_config_key: ''
+    inventory:
+        name: Workshop Inventory
+        organization:
+            name: Default
+            type: organization
+        type: inventory
+    job_slice_count: 1
+    job_tags: ''
+    job_type: run
+    limit: ''
+    name: INFRASTRUCTURE / Red Hat Insights
+    natural_key:
+        name: INFRASTRUCTURE / Red Hat Insights
+        organization:
+            name: Default
+            type: organization
+        type: job_template
+    playbook: playbooks/infrastructure/insights.yml
+    project:
+        name: Ansible official demo project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    related:
+        credentials:
+        -   credential_type:
+                kind: ssh
+                name: Machine
+                type: credential_type
+            name: zz_Workshop Credential
+            organization:
+                name: Default
+                type: organization
+            type: credential
+        labels: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+        survey_spec:
+            description: ''
+            name: ''
+            spec:
+            -   question_name: Enter your Red Hat customer portal username
+                required: true
+                type: text
+                variable: redhat_portal_username
+            -   question_name: Enter your Red Hat customer portal passowrd
+                required: true
+                type: password
+                variable: redhat_portal_password
+    scm_branch: ''
+    skip_tags: ''
+    start_at_task: ''
+    survey_enabled: true
+    timeout: 0
+    use_fact_cache: false
+    verbosity: 0
+    webhook_credential: null
+    webhook_service: ''
+-   allow_simultaneous: false
+    ask_credential_on_launch: false
+    ask_diff_mode_on_launch: false
+    ask_inventory_on_launch: false
+    ask_job_type_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_skip_tags_on_launch: false
+    ask_tags_on_launch: false
+    ask_variables_on_launch: false
+    ask_verbosity_on_launch: false
+    become_enabled: false
+    description: upgrade all yum packages for security related except kernel
+    diff_mode: false
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    extra_vars: ''
+    force_handlers: false
+    forks: 0
+    host_config_key: ''
+    inventory:
+        name: Test Inventory
+        organization:
+            name: Security
+            type: organization
+        type: inventory
+    job_slice_count: 1
+    job_tags: ''
+    job_type: run
+    limit: ''
+    name: INFRASTRUCTURE / Security Patching
+    natural_key:
+        name: INFRASTRUCTURE / Security Patching
+        organization:
+            name: Security
+            type: organization
+        type: job_template
+    playbook: scan_facts.yml
+    project:
+        name: Security Project
+        organization:
+            name: Security
+            type: organization
+        type: project
+    related:
+        credentials:
+        -   credential_type:
+                kind: ssh
+                name: Machine
+                type: credential_type
+            name: zz_Test Inventory credentials
+            organization: null
+            type: credential
+        labels: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+        survey_spec:
+            description: ''
+            name: ''
+            spec:
+            -   question_name: Enter host to configure
+                required: false
+                type: text
+                variable: HOSTS
+    scm_branch: ''
+    skip_tags: ''
+    start_at_task: ''
+    survey_enabled: true
+    timeout: 0
+    use_fact_cache: false
+    verbosity: 0
+    webhook_credential: null
+    webhook_service: ''
+-   allow_simultaneous: false
+    ask_credential_on_launch: false
+    ask_diff_mode_on_launch: false
+    ask_inventory_on_launch: false
+    ask_job_type_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_skip_tags_on_launch: false
+    ask_tags_on_launch: false
+    ask_variables_on_launch: false
+    ask_verbosity_on_launch: false
+    become_enabled: false
+    description: this role turns off IBM Community Grid boinc-client
+    diff_mode: false
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    extra_vars: ''
+    force_handlers: false
+    forks: 0
+    host_config_key: ''
+    inventory:
+        name: Workshop Inventory
+        organization:
+            name: Default
+            type: organization
+        type: inventory
+    job_slice_count: 1
+    job_tags: ''
+    job_type: run
+    limit: ''
+    name: INFRASTRUCTURE / Turn off IBM Community Grid
+    natural_key:
+        name: INFRASTRUCTURE / Turn off IBM Community Grid
+        organization:
+            name: Default
+            type: organization
+        type: job_template
+    playbook: playbooks/infrastructure/turn_off_community_grid.yml
+    project:
+        name: Ansible official demo project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    related:
+        credentials:
+        -   credential_type:
+                kind: ssh
+                name: Machine
+                type: credential_type
+            name: zz_Workshop Credential
+            organization:
+                name: Default
+                type: organization
+            type: credential
+        labels: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+        survey_spec: {}
+    scm_branch: ''
+    skip_tags: ''
+    start_at_task: ''
+    survey_enabled: false
+    timeout: 0
+    use_fact_cache: false
+    verbosity: 0
+    webhook_credential: null
+    webhook_service: ''
+-   allow_simultaneous: false
+    ask_credential_on_launch: false
+    ask_diff_mode_on_launch: false
+    ask_inventory_on_launch: false
+    ask_job_type_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_skip_tags_on_launch: false
+    ask_tags_on_launch: false
+    ask_variables_on_launch: false
+    ask_verbosity_on_launch: false
+    become_enabled: false
+    description: Create HTML report using SCAP Security Guide (SSG)
+    diff_mode: false
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    extra_vars: ''
+    force_handlers: false
+    forks: 0
+    host_config_key: ''
+    inventory:
+        name: Workshop Inventory
+        organization:
+            name: Default
+            type: organization
+        type: inventory
+    job_slice_count: 1
+    job_tags: ''
+    job_type: run
+    limit: ''
+    name: SECURITY / Create Openscap Report
+    natural_key:
+        name: SECURITY / Create Openscap Report
+        organization:
+            name: Default
+            type: organization
+        type: job_template
+    playbook: playbooks/security/openscap.yml
+    project:
+        name: Ansible official demo project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    related:
+        credentials:
+        -   credential_type:
+                kind: ssh
+                name: Machine
+                type: credential_type
+            name: zz_Workshop Credential
+            organization:
+                name: Default
+                type: organization
+            type: credential
+        labels: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+        survey_spec: {}
+    scm_branch: ''
+    skip_tags: ''
+    start_at_task: ''
+    survey_enabled: false
+    timeout: 0
+    use_fact_cache: false
+    verbosity: 0
+    webhook_credential: null
+    webhook_service: ''
+-   allow_simultaneous: false
+    ask_credential_on_launch: false
+    ask_diff_mode_on_launch: false
+    ask_inventory_on_launch: false
+    ask_job_type_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_skip_tags_on_launch: false
+    ask_tags_on_launch: false
+    ask_variables_on_launch: false
+    ask_verbosity_on_launch: false
+    become_enabled: false
+    description: hardening for Linux servers
+    diff_mode: false
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    extra_vars: ''
+    force_handlers: false
+    forks: 0
+    host_config_key: ''
+    inventory:
+        name: Workshop Inventory
+        organization:
+            name: Default
+            type: organization
+        type: inventory
+    job_slice_count: 1
+    job_tags: ''
+    job_type: run
+    limit: ''
+    name: SECURITY / Hardening
+    natural_key:
+        name: SECURITY / Hardening
+        organization:
+            name: Default
+            type: organization
+        type: job_template
+    playbook: playbooks/security/hardening.yml
+    project:
+        name: Ansible official demo project
+        organization:
+            name: Default
+            type: organization
+        type: project
+    related:
+        credentials:
+        -   credential_type:
+                kind: ssh
+                name: Machine
+                type: credential_type
+            name: zz_Workshop Credential
+            organization:
+                name: Default
+                type: organization
+            type: credential
+        labels: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+        schedules: []
+        survey_spec:
+            description: ''
+            name: ''
+            spec:
+            -   question_name: Enter host to configure
+                required: false
+                type: text
+                variable: HOSTS
+            -   choices:
+                - 'Yes'
+                - 'No'
+                question_name: Configure Firewall?
+                required: false
+                type: multiplechoice
+                variable: harden_firewall
+            -   choices:
+                - 'Yes'
+                - 'No'
+                question_name: Configure Time?
+                required: false
+                type: multiplechoice
+                variable: harden_time
+            -   choices:
+                - 'Yes'
+                - 'No'
+                question_name: Harden SSH?
+                required: false
+                type: multiplechoice
+                variable: harden_ssh
+            -   choices:
+                - 'Yes'
+                - 'No'
+                question_name: PCI Baseline?
+                required: false
+                type: multiplechoice
+                variable: harden_pci
+    scm_branch: ''
+    skip_tags: ''
+    start_at_task: ''
+    survey_enabled: true
+    timeout: 0
+    use_fact_cache: false
+    verbosity: 0
+    webhook_credential: null
+    webhook_service: ''
