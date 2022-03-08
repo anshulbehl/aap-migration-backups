@@ -43,6 +43,24 @@ inventory:
     host_filter: null
     insights_credential: null
     kind: ''
+    name: Migration_test
+    natural_key:
+        name: Migration_test
+        organization:
+            name: Security
+            type: organization
+        type: inventory
+    organization:
+        name: Security
+        type: organization
+    related:
+        groups: []
+        hosts: []
+    variables: '---'
+-   description: ''
+    host_filter: null
+    insights_credential: null
+    kind: ''
     name: Test Inventory
     natural_key:
         name: Test Inventory
