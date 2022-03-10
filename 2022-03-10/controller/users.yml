@@ -194,3 +194,19 @@ users:
             name: Member
             type: role
     username: rlopez
+-   email: anshulbehl.19@gmail.com
+    first_name: zz
+    is_superuser: false
+    is_system_auditor: false
+    last_name: zz
+    natural_key:
+        type: user
+        username: zz
+    related:
+        roles:
+        -   content_object:
+                name: Security
+                type: organization
+            name: Member
+            type: role
+    username: zz
