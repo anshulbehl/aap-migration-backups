@@ -1,156 +1,389 @@
-projects:
--   allow_override: false
-    credential: null
-    default_environment:
-        name: Ansible Engine 2.9 execution environment
-        type: execution_environment
+workflow_job_templates:
+-   allow_simultaneous: false
+    ask_inventory_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_variables_on_launch: false
     description: ''
-    local_path: _6__demo_project
-    name: Demo Project
+    extra_vars: ''
+    inventory: null
+    limit: null
+    name: approval
     natural_key:
-        name: Demo Project
-        organization:
-            name: Default
-            type: organization
-        type: project
-    organization:
-        name: Default
-        type: organization
+        name: approval
+        organization: null
+        type: workflow_job_template
+    organization: null
     related:
+        labels: []
+        notification_templates_approvals: []
         notification_templates_error: []
         notification_templates_started: []
         notification_templates_success: []
         schedules: []
-    scm_branch: ''
-    scm_clean: false
-    scm_delete_on_update: false
-    scm_refspec: ''
-    scm_type: git
-    scm_update_cache_timeout: 0
-    scm_update_on_launch: true
-    scm_url: https://github.com/ansible/ansible-tower-samples
-    timeout: 0
--   allow_override: false
-    credential: null
-    default_environment:
-        name: Ansible Engine 2.9 execution environment
-        type: execution_environment
-    description: prescriptive demos from Red Hat Management Business Unit
-    local_path: _8__ansible_official_demo_project
-    name: Ansible official demo project
-    natural_key:
-        name: Ansible official demo project
-        organization:
-            name: Default
-            type: organization
-        type: project
-    organization:
-        name: Default
-        type: organization
-    related:
-        notification_templates_error: []
-        notification_templates_started: []
-        notification_templates_success: []
-        schedules: []
-    scm_branch: ''
-    scm_clean: false
-    scm_delete_on_update: false
-    scm_refspec: ''
-    scm_type: git
-    scm_update_cache_timeout: 0
-    scm_update_on_launch: false
-    scm_url: https://github.com/ansible/product-demos
-    timeout: 0
--   allow_override: false
-    credential: null
-    default_environment:
-        name: Ansible Engine 2.9 execution environment
-        type: execution_environment
-    description: playbooks to support fact scanning in Ansible Tower
-    local_path: _15__ansible_official_awx_facts_playbooks_project
-    name: Ansible official awx-facts-playbooks project
-    natural_key:
-        name: Ansible official awx-facts-playbooks project
-        organization:
-            name: Default
-            type: organization
-        type: project
-    organization:
-        name: Default
-        type: organization
-    related:
-        notification_templates_error: []
-        notification_templates_started: []
-        notification_templates_success: []
-        schedules: []
-    scm_branch: ''
-    scm_clean: false
-    scm_delete_on_update: false
-    scm_refspec: ''
-    scm_type: git
-    scm_update_cache_timeout: 0
-    scm_update_on_launch: false
-    scm_url: https://github.com/ansible/awx-facts-playbooks.git
-    timeout: 0
--   allow_override: false
-    credential: null
-    default_environment:
-        name: Ansible Engine 2.9 execution environment
-        type: execution_environment
-    description: Security
-    local_path: _21__security_project
-    name: Security Project
-    natural_key:
-        name: Security Project
+        survey_spec: {}
+        workflow_nodes:
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data: {}
+            identifier: e0b6ddc3-0d8e-4345-a878-bf80c897eeaa
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: e0b6ddc3-0d8e-4345-a878-bf80c897eeaa
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: approval
+                    organization: null
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes: []
+                success_nodes:
+                -   identifier: 6c408e71-7ea1-4568-b045-e82720e78c8a
+                    type: workflow_job_template_node
+                    workflow_job_template:
+                        name: approval
+                        organization: null
+                        type: workflow_job_template
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: DEVELOPER / Create Developer Report
+                organization:
+                    name: Default
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: approval
+                organization: null
+                type: workflow_job_template
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data:
+                application: httpd
+            identifier: 348999cf-9473-47a5-b789-0b73b5e0f7e1
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: 348999cf-9473-47a5-b789-0b73b5e0f7e1
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: approval
+                    organization: null
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes: []
+                success_nodes: []
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: INFRASTRUCTURE / Deploy Application
+                organization:
+                    name: Default
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: approval
+                organization: null
+                type: workflow_job_template
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data: {}
+            identifier: 6d827631-8abd-4609-beb2-8544be5a7321
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: 6d827631-8abd-4609-beb2-8544be5a7321
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: approval
+                    organization: null
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes: []
+                success_nodes: []
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: INFRASTRUCTURE / Gather Debug Info
+                organization:
+                    name: Default
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: approval
+                organization: null
+                type: workflow_job_template
+    scm_branch: null
+    survey_enabled: false
+    webhook_credential: null
+    webhook_service: ''
+-   allow_simultaneous: false
+    ask_inventory_on_launch: false
+    ask_limit_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_variables_on_launch: false
+    description: sec workflow
+    extra_vars: ''
+    inventory:
+        name: Test Inventory
         organization:
             name: Security
             type: organization
-        type: project
+        type: inventory
+    limit: all
+    name: Security workflow
+    natural_key:
+        name: Security workflow
+        organization:
+            name: Security
+            type: organization
+        type: workflow_job_template
     organization:
         name: Security
         type: organization
     related:
+        labels: []
+        notification_templates_approvals: []
         notification_templates_error: []
         notification_templates_started: []
         notification_templates_success: []
         schedules: []
+        survey_spec: {}
+        workflow_nodes:
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data: {}
+            identifier: f4cf91be-b365-45f1-bc3e-d10498243a09
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: f4cf91be-b365-45f1-bc3e-d10498243a09
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: Security workflow
+                    organization:
+                        name: Security
+                        type: organization
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes:
+                -   identifier: aef09e1b-0d78-4a45-8b06-855e34f90b26
+                    type: workflow_job_template_node
+                    workflow_job_template:
+                        name: Security workflow
+                        organization:
+                            name: Security
+                            type: organization
+                        type: workflow_job_template
+                success_nodes:
+                -   identifier: 92a87081-1b7a-4fae-bba1-98252d6fc297
+                    type: workflow_job_template_node
+                    workflow_job_template:
+                        name: Security workflow
+                        organization:
+                            name: Security
+                            type: organization
+                        type: workflow_job_template
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: INFRASTRUCTURE / Security Patching
+                organization:
+                    name: Security
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: Security workflow
+                organization:
+                    name: Security
+                    type: organization
+                type: workflow_job_template
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data: {}
+            identifier: 92a87081-1b7a-4fae-bba1-98252d6fc297
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: 92a87081-1b7a-4fae-bba1-98252d6fc297
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: Security workflow
+                    organization:
+                        name: Security
+                        type: organization
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes:
+                -   identifier: d975b6ab-ed2c-4fa3-a8d5-4875420b322f
+                    type: workflow_job_template_node
+                    workflow_job_template:
+                        name: Security workflow
+                        organization:
+                            name: Security
+                            type: organization
+                        type: workflow_job_template
+                success_nodes:
+                -   identifier: 77189666-7638-4c87-ba74-987438a57b97
+                    type: workflow_job_template_node
+                    workflow_job_template:
+                        name: Security workflow
+                        organization:
+                            name: Security
+                            type: organization
+                        type: workflow_job_template
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: INFRASTRUCTURE / Fact Scan
+                organization:
+                    name: Default
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: Security workflow
+                organization:
+                    name: Security
+                    type: organization
+                type: workflow_job_template
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data: {}
+            identifier: 77189666-7638-4c87-ba74-987438a57b97
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: 77189666-7638-4c87-ba74-987438a57b97
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: Security workflow
+                    organization:
+                        name: Security
+                        type: organization
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes: []
+                success_nodes: []
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: INFRASTRUCTURE / Security Patching
+                organization:
+                    name: Security
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: Security workflow
+                organization:
+                    name: Security
+                    type: organization
+                type: workflow_job_template
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data: {}
+            identifier: d975b6ab-ed2c-4fa3-a8d5-4875420b322f
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: d975b6ab-ed2c-4fa3-a8d5-4875420b322f
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: Security workflow
+                    organization:
+                        name: Security
+                        type: organization
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes: []
+                success_nodes: []
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: INFRASTRUCTURE / Turn off IBM Community Grid
+                organization:
+                    name: Default
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: Security workflow
+                organization:
+                    name: Security
+                    type: organization
+                type: workflow_job_template
+        -   all_parents_must_converge: false
+            diff_mode: null
+            extra_data: {}
+            identifier: aef09e1b-0d78-4a45-8b06-855e34f90b26
+            inventory: null
+            job_tags: null
+            job_type: null
+            limit: null
+            natural_key:
+                identifier: aef09e1b-0d78-4a45-8b06-855e34f90b26
+                type: workflow_job_template_node
+                workflow_job_template:
+                    name: Security workflow
+                    organization:
+                        name: Security
+                        type: organization
+                    type: workflow_job_template
+            related:
+                always_nodes: []
+                credentials: []
+                failure_nodes: []
+                success_nodes: []
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: INFRASTRUCTURE / Patching
+                organization:
+                    name: Default
+                    type: organization
+                type: job_template
+            verbosity: null
+            workflow_job_template:
+                name: Security workflow
+                organization:
+                    name: Security
+                    type: organization
+                type: workflow_job_template
     scm_branch: master
-    scm_clean: false
-    scm_delete_on_update: false
-    scm_refspec: ''
-    scm_type: git
-    scm_update_cache_timeout: 0
-    scm_update_on_launch: false
-    scm_url: https://github.com/ansible/awx-facts-playbooks.git
-    timeout: 0
--   allow_override: false
-    credential: null
-    default_environment:
-        name: Ansible Engine 2.9 execution environment
-        type: execution_environment
-    description: ''
-    local_path: _24__aap_migration
-    name: AAP Migration
-    natural_key:
-        name: AAP Migration
-        organization:
-            name: Default
-            type: organization
-        type: project
-    organization:
-        name: Default
-        type: organization
-    related:
-        notification_templates_error: []
-        notification_templates_started: []
-        notification_templates_success: []
-        schedules: []
-    scm_branch: ''
-    scm_clean: false
-    scm_delete_on_update: false
-    scm_refspec: ''
-    scm_type: git
-    scm_update_cache_timeout: 0
-    scm_update_on_launch: false
-    scm_url: https://github.com/rlopez133/refarch-aap21
-    timeout: 0
+    survey_enabled: false
+    webhook_credential: null
+    webhook_service: ''
