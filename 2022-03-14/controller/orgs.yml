@@ -1,0 +1,36 @@
+organizations:
+-   description: ''
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    max_hosts: 0
+    name: Default
+    natural_key:
+        name: Default
+        type: organization
+    related:
+        notification_templates: []
+        notification_templates_approvals: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []
+-   description: Org for security
+    execution_environment:
+        name: Ansible Engine 2.9 execution environment
+        type: execution_environment
+    max_hosts: 0
+    name: Security
+    natural_key:
+        name: Security
+        type: organization
+    related:
+        notification_templates:
+        -   name: zz Test notification
+            organization:
+                name: Security
+                type: organization
+            type: notification_template
+        notification_templates_approvals: []
+        notification_templates_error: []
+        notification_templates_started: []
+        notification_templates_success: []

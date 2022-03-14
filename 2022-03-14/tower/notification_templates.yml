@@ -1,0 +1,60 @@
+notification_templates:
+-   description: ''
+    messages: null
+    name: zz Test notification
+    natural_key:
+        name: zz Test notification
+        organization:
+            name: Security
+            type: organization
+        type: notification_template
+    notification_configuration:
+        approved_body: 'The approval node "{{ approval_node_name }}" was approved.
+            {{ workflow_url }}
+
+
+            {{ job_metadata }}'
+        denied_body: 'The approval node "{{ approval_node_name }}" was denied. {{
+            workflow_url }}
+
+
+            {{ job_metadata }}'
+        error_body: '{{ job_friendly_name }} #{{ job.id }} had status {{ job.status
+            }}, view details at {{ url }}
+
+
+            {{ job_metadata }}'
+        host: 1.2.3.4
+        password: ''
+        port: 25
+        recipients:
+        - abehl@redhat.com
+        running_body: 'The approval node "{{ approval_node_name }}" needs review.
+            This approval node can be viewed at: {{ workflow_url }}
+
+
+            {{ job_metadata }}'
+        sender: abehl@redhat.com
+        started_body: '{{ job_friendly_name }} #{{ job.id }} had status {{ job.status
+            }}, view details at {{ url }}
+
+
+            {{ job_metadata }}'
+        success_body: '{{ job_friendly_name }} #{{ job.id }} had status {{ job.status
+            }}, view details at {{ url }}
+
+
+            {{ job_metadata }}'
+        timed_out_body: 'The approval node "{{ approval_node_name }}" has timed out.
+            {{ workflow_url }}
+
+
+            {{ job_metadata }}'
+        timeout: 30
+        use_ssl: false
+        use_tls: true
+        username: admin
+    notification_type: email
+    organization:
+        name: Security
+        type: organization
