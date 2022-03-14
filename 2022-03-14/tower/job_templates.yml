@@ -58,7 +58,42 @@ job_templates:
         notification_templates_error: []
         notification_templates_started: []
         notification_templates_success: []
-        schedules: []
+        schedules:
+        -   description: every day until March 23, 2022
+            diff_mode: null
+            enabled: true
+            extra_data: {}
+            inventory:
+                name: Workshop Inventory
+                organization:
+                    name: Default
+                    type: organization
+                type: inventory
+            job_tags: null
+            job_type: null
+            limit: null
+            name: zz_schedule
+            natural_key:
+                name: zz_schedule
+                type: schedule
+                unified_job_template:
+                    name: DEVELOPER / Create Developer Report
+                    organization:
+                        name: Default
+                        type: organization
+                    type: job_template
+            related:
+                credentials: []
+            rrule: DTSTART;TZID=America/New_York:20220315T000000 RRULE:FREQ=DAILY;INTERVAL=1;UNTIL=20220324T040000Z
+            scm_branch: null
+            skip_tags: null
+            unified_job_template:
+                name: DEVELOPER / Create Developer Report
+                organization:
+                    name: Default
+                    type: organization
+                type: job_template
+            verbosity: null
         survey_spec: {}
     scm_branch: ''
     skip_tags: ''
